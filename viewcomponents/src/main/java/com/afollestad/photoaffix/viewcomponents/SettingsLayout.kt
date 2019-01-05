@@ -22,7 +22,7 @@ import android.view.View
 import android.widget.LinearLayout
 import androidx.annotation.ColorInt
 import com.afollestad.materialdialogs.MaterialDialog
-import com.afollestad.materialdialogs.color.colorChooser
+//import com.afollestad.materialdialogs.color.colorChooser
 import com.afollestad.photoaffix.prefs.BgFillColor
 import com.afollestad.photoaffix.prefs.ImageSpacingHorizontal
 import com.afollestad.photoaffix.prefs.ImageSpacingVertical
@@ -151,15 +151,6 @@ class SettingsLayout(
   private fun onClickBackgroundFillColor() {
     MaterialDialog(getActivity()!!).show {
       title(R.string.background_fill_color_title)
-      colorChooser(
-          colors = PRIMARY_COLORS,
-          subColors = PRIMARY_COLORS_SUB,
-          initialSelection = bgFillColorPref.get(),
-          allowCustomArgb = true,
-          showAlphaSelector = true
-      ) { _, color ->
-        onColorSelection(color)
-      }
       positiveButton(R.string.done)
       negativeButton(android.R.string.cancel)
     }

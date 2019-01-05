@@ -30,7 +30,7 @@ dependencies {
   kapt 'com.google.dagger:dagger-compiler:' + versions.dagger
 
   implementation 'com.afollestad.material-dialogs:core:' + versions.materialDialogs
-  implementation 'com.afollestad.material-dialogs:color:' + versions.materialDialogs
+  //implementation 'com.afollestad.material-dialogs:color:' + versions.materialDialogs
   implementation 'com.afollestad:drag-select-recyclerview:' + versions.dragSelectRv
   implementation 'com.afollestad:assent:' + versions.assent
 

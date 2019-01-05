@@ -28,7 +28,7 @@ dependencies {
   kapt 'com.google.dagger:dagger-compiler:' + versions.dagger
 
   implementation 'com.afollestad.material-dialogs:core:' + versions.materialDialogs
-  implementation 'com.afollestad.material-dialogs:color:' + versions.materialDialogs
+  //implementation 'com.afollestad.material-dialogs:color:' + versions.materialDialogs
 }
 
 apply from: '../spotless.gradle'
